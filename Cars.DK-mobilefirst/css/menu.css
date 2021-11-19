@@ -1,0 +1,63 @@
+
+* {
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  overflow: hidden;
+}
+
+body {
+  background-image: url(https://images.freecreatives.com/wp-content/uploads/2016/02/10-Free-Carbon-Fiber-Photoshop-Patterns.jpg);
+}
+
+.menulogo {
+width: 50%;
+max-width: 300px;
+height: auto;
+display: block;
+margin-left: auto;
+margin-right: auto;
+padding-bottom: 200px;
+}
+
+/************** TLF MENU HER *************/
+#burger {
+  text-decoration: none;
+  color: white;
+  background-color: inherit;
+  font-size: 35px;
+  padding-left: 90%;
+  position: fixed;
+  padding-bottom: 90%;
+}
+
+#burger a {
+}
+
+.menutlf {
+  margin-top: 20px;
+  text-align: center;
+
+}
+
+.menutlf a {
+  font-size: 30px;
+  text-decoration: none;
+  color: white;
+  background-color: inherit;
+  line-height: 60px;
+
+
+}
+.menutlf a:hover {
+  text-decoration: none;
+  color: black;
+  background-color: inherit;
+}
+
+.menutlf li {
+}
+
+.menutlf ul {
+  list-style-type: none;
+}

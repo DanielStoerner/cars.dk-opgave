@@ -1,0 +1,458 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+header {
+  background-image: url(../images/2_header.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 1100px;
+}
+
+/* ------------ PC LOGO -------------- */
+#pclogo {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 0 0.1rem black);
+}
+
+/* -------- PC MENU --------- */
+#nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+#nav li {
+  position: relative;
+  display: inline;
+}
+
+#nav a {
+  display: inline-block;
+  padding: 10px;
+}
+
+.position {
+  top: -50px;
+}
+
+/* ---------- DROP DOOWN KODE------------- */
+#nav ul {
+  top: 20px;
+  position: absolute;
+  left: -9999px;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+#nav ul li {
+  display: block;
+}
+
+#nav li:hover {
+  color: black;
+  background-color: inherit;
+}
+
+#nav li:hover ul {
+  left: 0;
+  top: 30px;
+}
+
+/* HOVER FARVE SERVICE/KONTAKT */
+#sort1 a:hover , #sort2 a:hover {
+  text-decoration: underline !important;
+  background-color: inherit;
+}
+
+/* HOVER FARVE LEASING/BILER */
+#nav li:hover a {
+  color: white;
+  background-color: inherit;
+}
+
+#nav li ul {
+  background-color: rgba(0, 0, 0, 0.33);
+  color: inherit;
+}
+/* -------------------------- */
+
+#nav li:hover ul a {
+  text-decoration: none;
+  background: none;
+}
+
+#nav li:hover ul a:hover {
+  color: white;
+  background-color: inherit;
+}
+
+#nav ul a {
+  white-space: nowrap;
+  display: block;
+}
+
+#nav a {
+  color: white;
+  background-color: inherit;
+  text-decoration: none;
+}
+
+#nav a:hover {
+  text-decoration: underline;
+  background: white;
+  color: inherit;
+}
+
+/* ----- SKJUL MOBIL NAV + LOGO ---- */
+.menulogo, #burger {
+  display: none;
+}
+
+/* -----------  PC MEDIA  -------------- */
+@media screen and (max-width:1600px) {
+  header{
+    background-size: 100%;
+    height: 800px;
+  }
+}
+
+/* ----------- TABLET 1 MEDIA -------------- */
+@media screen and (max-width:1300px) {
+  header{
+    background-size: 100%;
+    height: 600px;
+  }
+}
+
+/* ----------- TABLET 2 MEDIA  -------------- */
+@media screen and (max-width:1000px) {
+  header{
+    background-size: 100%;
+    height: 500px;
+  }
+
+  
+}
+
+/* -----------TLF MEDIA -------------- */
+@media screen and (max-width:677px) {
+
+
+.bilbilled {
+max-height: 400px;
+    }
+
+#slogan {
+  padding-top: 100px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+header{
+  background-size: cover;
+  height: 600px;
+}
+
+  /* ----- SKJUL PC NAV + LOGO ---- */
+  #nav, #pclogo {
+    display: none;
+  }
+
+  .menulogo {
+    width: 50%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    padding-left: 25%;
+  }
+
+  /************** TLF MENU HER *************/
+  #burger {
+    text-decoration: none;
+    color: white;
+    background-color: inherit;
+    font-size: 40px;
+    position: fixed;
+    margin: 10px;
+    display: block;
+  }
+
+  .menutlf {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .menutlf a {
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+    background-color: inherit;
+    line-height: 60px;
+  }
+
+  .menutlf a:hover {
+    text-decoration: none;
+    color: black;
+    background-color: inherit;
+  }
+
+  .menutlf ul {
+    list-style-type: none;
+  }
+}
+
+/* ------------------ CONTENT HER -------------------------- */
+
+#slogan {
+  text-align: center;
+  color: white;
+  background-color: inherit;
+  font-size: 20px;;
+  max-width: 900px;
+}
+
+#slogan h1 {
+  padding-top: 300px;
+  font-family: 'Montserrat' , sans-serif;
+  font-weight: 400;
+  text-transform:uppercase;
+  letter-spacing: 2px;
+  text-shadow: 6px 6px 6px #000000;
+}
+
+#slogan p {
+font-size: 18px;
+text-shadow: 6px 6px 6px #000000;
+}
+
+#cta {
+  margin-top: 30px !important;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#cta img {
+  height: 43px;
+}
+
+#cta img:hover {
+height: 44px;
+background-color: rgba(255, 255, 255, 0.233);
+border-radius: 20px;
+}
+
+
+/* -------------- POPULÆRE BILER --------------- */ 
+.bilbilled {
+  height: 400px;
+}
+
+.seller {
+  width: 400px;
+}
+
+#popular  {
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 200px;
+}
+
+#biler {
+  max-width: 1900px;
+display: flex;
+flex-wrap: wrap;
+width: 100%;
+justify-content: center !important;
+align-items: center;
+gap: 50px;
+overflow: hidden;
+}
+
+#popular h1 {
+  padding-top: 20px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.flexer {
+  display: flex;
+  align-items: center;
+}
+
+.pricecta {
+  height: 35x;
+}
+
+#carsvid {
+width: 100%;
+height: auto;
+}
+
+#contact h1 {
+  padding-top: 200px;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+#contact h2 {
+  padding-top: 20px;
+  font-size: 25px;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* ----------- Populære biler Breakpoints  -------------- */
+@media screen and (max-width:3000px) {
+#biler {
+  max-width: 1300px;
+}
+
+#slogan h1 {
+  padding-top: 300px;
+}
+
+}
+
+@media screen and (max-width:1900px) {
+  #biler {
+    max-width: 1300px;
+  }
+
+  #slogan h1 {
+    padding-top: 200px;
+  }
+
+}
+
+@media screen and (max-width:1300px) {
+  #biler {
+    max-width: 900px;
+  }
+
+  #slogan h1 {
+    padding-top: 100px;
+  }
+}
+
+@media screen and (max-width:800px) {
+  #biler {
+    max-width: 400px;
+  }
+
+  #contact h1 {
+    padding-top: 200px;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  
+  #contact h2 {
+    padding-top: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+
+}
+
+/* --------------- FOOTER STYLING -------------------- */
+.container{
+    max-width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+
+.footer{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.596),rgba(0,0,0,0.7)),url(https://images.freecreatives.com/wp-content/uploads/2016/02/10-Free-Carbon-Fiber-Photoshop-Patterns.jpg);
+    padding: 70px 0;
+
+}
+
+.footer-col{
+    width: 18%;
+    padding: 0 80px;
+}
+.footer-col h4{
+    font-size: 18px;
+    color: white;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+    left: 40px;
+}
+.footer-col h4::after{
+    content:'';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #ffffff;
+    height: 2px;
+    box-sizing: border-box;
+    width: 80px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    color: rgb(202, 198, 198);
+    display: block;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+.footer-col ul li a:hover{
+    color: rgb(146, 156, 155);
+
+}
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    margin-right:10px;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: black;
+    transition: all 0.3s ease;
+}
+.footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: rgb(122, 122, 122);
+}
+
+.fa{
+    color: rgb(250, 250, 250);
+    position: relative;
+    text-align: center;
+
+}
+
+@media screen and (max-width:550px){
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+  }

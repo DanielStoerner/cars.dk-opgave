@@ -1,0 +1,596 @@
+
+*,
+*::before,
+*::after{
+    margin: 0%;
+}
+
+
+
+
+body{
+    font-family: 'Irish Grover', cursive;
+    font-family: 'Montserrat', sans-serif;
+    background: rgb(80,79,79);
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,0.6867121848739496) 0%, rgba(248, 248, 248, 0.757) 47%, rgba(92, 92, 92, 0.692) 100%);}
+
+
+
+/* ------------ header big photo -------------- */
+.header{
+    min-height: 50vh;
+    width: 100%;
+background-image: linear-gradient(180deg,  rgba(78, 75, 75, 0.866) 0%, rgba(80, 78, 78, 0.575) 0%),url(../images/header2.jpg); 
+    background-position: center;
+background-size: cover;
+position: relative;
+height: 50px;
+
+
+}
+
+/* ------------ PC LOGO -------------- */
+#pclogo {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 0 0.1rem black);
+ 
+}
+
+/* -------- PC MENU --------- */
+#nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  
+}
+
+#nav li {
+  position: relative;
+  display: inline;
+}
+
+#nav a {
+  display: inline-block;
+  padding: 10px;
+  font-size: 100%;
+}
+
+.position {
+  top: -50px;
+}
+
+/* ---------- DROP DOOWN KODE------------- */
+#nav ul {
+  top: 20px;
+  position: absolute;
+  left: -9999px;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+#nav ul li {
+  display: block;
+}
+
+#nav li:hover {
+  color: black;
+  background-color: inherit;
+}
+
+#nav li:hover ul {
+  left: 0;
+  top: 30px;
+}
+
+/* HOVER FARVE SERVICE/KONTAKT */
+#sort1 a:hover , #sort2 a:hover {
+  text-decoration: underline !important;
+  background-color: inherit;
+}
+
+/* HOVER FARVE LEASING/BILER */
+#nav li:hover a {
+  color: white;
+  background-color: inherit;
+}
+
+#nav li ul {
+  background-color: rgba(0, 0, 0, 0.33);
+  color: inherit;
+}
+/* -------------------------- */
+
+#nav li:hover ul a {
+  text-decoration: none;
+  background: none;
+}
+
+#nav li:hover ul a:hover {
+  color: white;
+  background-color: inherit;
+}
+
+#nav ul a {
+  white-space: nowrap;
+  display: block;
+}
+
+#nav a {
+  color: white;
+  background-color: inherit;
+  text-decoration: none;
+}
+
+
+
+/* ----- SKJUL MOBIL NAV + LOGO ---- */
+.menulogo, #burger {
+  display: none;
+}
+
+#slogan {
+    margin-left: 34%;
+  padding-top: 5%;
+  }
+  
+  
+  
+  
+  
+  
+  /* ------------------ CONTENT HER -------------------------- */
+  
+  #slogan {
+    height: 400px;
+    text-align: center;
+    color: white;
+    background-color: inherit;
+    margin-top: 50px;
+    font-size: 25px;
+    max-width: 600px;
+  }
+  
+  /* ------------ Teksten under big photo-------------- */
+.info {
+    display: inline-table;
+    width: 600px;
+    padding: 10px;
+    margin: 0;
+  position: relative;
+  left: 15%;
+  margin-left: 1%;
+  margin-top: 5%;
+  font-size: 16px;
+  line-height: 2;
+
+  }
+  
+
+.topcontainer, .bottomcontainer {
+    display: flex;
+    flex-flow: row wrap;
+    padding-left: 16%;
+    padding-right: 16%;
+    margin-right: 0%;
+}
+
+
+.innerbox1{
+    min-height: 20vh; 
+    border: 0.5px solid rgb(0, 0, 0);
+    flex-grow: 1;
+     flex-shrink: 0;
+     background: rgba(31, 30, 30, 0.151);
+     -webkit-transition: background-color 1.5s ease-out;
+     -moz-transition: background-color 1.5s ease-out;
+     -o-transition: background-color 1.5s ease-out;
+     transition: background-color 1.5s ease-out;
+
+}
+
+.innerbox2{
+    min-height: 20vh; 
+    border: 0.5px solid rgb(0, 0, 0);
+    flex-grow: 1;
+     flex-shrink: 0;
+     background: rgba(31, 30, 30, 0.13);
+    -webkit-transition: background-color 1.5s ease-out;
+    -moz-transition: background-color 1.5s ease-out;
+    -o-transition: background-color 1.5s ease-out;
+    transition: background-color 1.5s ease-out;
+}
+
+.innerbox2:hover{
+    background-color: rgb(64, 74, 82);
+    cursor: pointer;    
+    
+
+}
+.innerbox1:hover{
+    background-color: rgb(64, 74, 82);
+    cursor: pointer; 
+    
+
+}
+
+.bottomcontainer,
+.topcontainer,
+.innerbox1,
+.innerbox2{
+flex-basis: 33%;
+
+}
+
+img{
+    width: 100%;
+
+}
+
+.innerbox1 img{
+    width: 30%;
+    margin-left: 30%;
+    margin-top: 2%;
+    
+}
+.innerbox2 img{
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 3%;
+}
+
+.innerbox1 img:hover{
+    transform: scale(1.10);
+    transition: 0.5s;
+    
+    
+}
+
+.innerbox2 img:hover{
+    transform: scale(1.10);
+    transition: 0.5s;
+    
+    
+}
+
+  
+  
+  /* ------------------ Kontakt os boks -------------------------- */
+  
+  .contact{
+    margin: 200px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.596),rgba(0,0,0,0.7)),url(../images/kontakt.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+    margin-bottom: -250px;
+    max-width: 1165px;
+  
+
+    
+  }
+  
+  .contact h1{
+    color: rgb(255, 255, 255);
+  margin-bottom: 40px;
+  padding: 0;
+  font-size: 30px;
+  }
+
+  .btn{
+    display: inline-block;
+    padding: 1rem 2rem;
+    letter-spacing: 1px;
+    font-size: 0.95rem;
+    color: white;
+    background-image: linear-gradient(to right, #111111 0%, #848585 100%);
+    border-radius: .8rem;
+    text-decoration: none;
+
+  
+  }
+  
+  .btn:hover{
+    background-image: linear-gradient(to right, #848585 0%, #111111 100%);
+    transition: 0.5s;
+    transform: scale(1.05);
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+  .knap{
+    display: inline-block;
+    text-decoration: none;
+    color: aliceblue;
+    border: 1px solid aliceblue;
+    padding: 20px 80px;
+    font-size: 16px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    margin-top: 40px;
+    
+  }
+  .knap:hover{
+    border: 1px solid rgba(247, 247, 247, 0.377);
+    background: rgba(158, 156, 156, 0.637);
+    transition: 0.5s;
+    transform: scale(1.05);
+  }
+
+  /* --------------- FOOTER STYLING -------------------- */
+.container{
+    max-width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+
+.footer{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.596),rgba(0,0,0,0.7)),url(https://images.freecreatives.com/wp-content/uploads/2016/02/10-Free-Carbon-Fiber-Photoshop-Patterns.jpg);
+    padding: 70px 0;
+    margin-top: 20%;
+
+}
+
+.footer-col{
+    width: 18%;
+    padding: 0 80px;
+    
+}
+.footer-col h4{
+    font-size: 18px;
+    color: white;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+    left: 40px;
+}
+.footer-col h4::after{
+    content:'';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #ffffff;
+    height: 2px;
+    box-sizing: border-box;
+    width: 80px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    color: rgb(202, 198, 198);
+    display: block;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+.footer-col ul li a:hover{
+    color: rgb(146, 156, 155);
+
+}
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    margin-right:10px;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: black;
+    transition: all 0.3s ease;
+}
+.footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: rgb(122, 122, 122);
+}
+
+.fa{
+    color: rgb(250, 250, 250);
+    position: relative;
+    text-align: center;
+
+}
+
+
+
+/* -----------MEDIA TIL MENU-------------- */
+@media only screen and (max-width:677px) {
+
+  #slogan {
+    padding-top: 150px;
+    margin-left: 0;
+    font-size: 20px;
+
+  }
+  
+  h2{
+    padding-top: 40px;
+  }
+
+  .header{
+    min-height: 50vh;
+    width: 100%;
+background-image: linear-gradient(180deg,  rgba(78, 75, 75, 0.866) 0%, rgba(80, 78, 78, 0.575) 0%),url(../images/header2.jpg); 
+    background-position: center;
+background-size: cover;
+position: relative;
+height: 30px;
+padding-top: 10%;
+
+
+}
+
+.btn{
+    display: inline-block;
+    padding: 1rem 2rem;
+    letter-spacing: 1px;
+    font-size: 0.95rem;
+    color: white;
+    background-image: linear-gradient(to right, #111111 0%, #848585 100%);
+    border-radius: .8rem;
+    text-decoration: none;
+    
+  
+  }
+  
+    /* ----- SKJUL PC NAV + LOGO ---- */
+    #nav, #pclogo {
+      display: none;
+    }
+  
+    .menulogo {
+      width: 50%;
+      max-width: 300px;
+      height: auto;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      position: absolute;
+      padding-left: 25%;
+    }
+  
+    /************** TLF MENU HER *************/
+    #burger {
+      text-decoration: none;
+      color: white;
+      background-color: inherit;
+      font-size: 40px;
+      position: fixed;
+      margin: 10px;
+      display: block;
+    }
+  
+    .menutlf {
+      margin-top: 20px;
+      text-align: center;
+    }
+  
+    .menutlf a {
+      font-size: 30px;
+      text-decoration: none;
+      color: white;
+      background-color: inherit;
+      line-height: 60px;
+    }
+  
+    .menutlf a:hover {
+      text-decoration: none;
+      color: black;
+      background-color: inherit;
+    }
+  
+    .menutlf ul {
+      list-style-type: none;
+    }
+  }
+  
+
+
+@media screen and (max-width:550px){
+
+
+/* -----------FOOTER HER------ */
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+    }
+
+
+@media screen and (max-width:768px){
+   
+   
+    .topcontainer, .bottomcontainer {
+        display: flex;
+        flex-flow: row wrap;
+        padding-left: 2%;
+        padding-right: 2%;
+        margin-right: 2%;
+        margin-bottom: 0%;
+    }
+    .innerbox1{
+        min-height: 20vh; 
+        border: 1px solid rgb(0, 0, 0);
+        flex-grow: 1;
+         flex-shrink: 0;
+         background-image: rgba(31, 30, 30, 0.13)
+    
+    }
+    
+    .innerbox2{
+        min-height: 20vh; 
+        border: 1px solid rgb(0, 0, 0);
+        flex-grow: 1;
+         flex-shrink: 0;
+         background-image: rgba(31, 30, 30, 0.13)
+    
+    }
+   
+    .innerbox1 img{
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 0%;
+
+    }
+    .innerbox2 img{
+        width: 80%;
+        margin-left: 8%;
+        margin-top: 0%;
+    }
+
+.info {
+  
+    width: 300px;
+    padding: 10px;
+    position: relative;
+  left: 0%;
+    align-items: center;
+    border: none;
+    margin: 0;
+    margin-left: 5%;
+  margin-top: 5%;
+  font-size: 16px;
+  }
+  
+  
+  .contact{
+    margin: 100px auto;
+    width: 98%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.596),rgba(0,0,0,0.7)),url(../images/header2.JPG);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+  
+    
+  }
+  
+  .contact h1{
+    color: rgb(255, 255, 255);
+  margin-bottom: 40px;
+  padding: 0;
+  font-size: 23px;
+  }
+
+}
